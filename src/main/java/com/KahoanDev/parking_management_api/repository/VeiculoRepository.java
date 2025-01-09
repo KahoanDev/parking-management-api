@@ -8,4 +8,5 @@ import java.util.UUID;
 public interface VeiculoRepository extends JpaRepository<Veiculo, UUID> {
 
     Veiculo findByPlaca(String placa);
+    void deleteByPlaca(String placa);
 }

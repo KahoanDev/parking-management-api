@@ -26,4 +26,8 @@ public class VeiculoService {
         repository.save(newVeiculo);
         return newVeiculo;
     }
+
+    public void deleteVeiculo(String placa){
+        repository.deleteByPlaca(placa);
+    }
 }
